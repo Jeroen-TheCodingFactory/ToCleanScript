@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Elke dag",
+        "activities": [
+            {
+                "title": "Eten Koken",
+                "done": false
+            },
+            {
+                "title": "Afwassen",
+                "done": false
+            },
+            {
+                "title": "Werkspullen opruimen",
+                "done": false
+            }
+        ]
+    },
+    {
+        "title": "Elke week",
+        "activities": [
+            {
+                "title": "Boven afstoffen",
+                "done": false
+            },
+            {
+                "title": "Beneden afstoffen",
+                "done": true
+            }
+        ]
+    },
+    {
+        "title": "Elke Maand",
+        "activities": [
+            {
+                "title": "Deuren afstoffen",
+                "done": false
+            }
+        ]
+    },
+    {
+        "title": "Elke Jaar",
+        "activities": [
+            {
+                "title": "Vriezer ontdooien",
+                "done": true
+            },
+            {
+                "title": "Grote schoonmaak in de schuur",
+                "done": false
+            }
+        ]
+    }
+]

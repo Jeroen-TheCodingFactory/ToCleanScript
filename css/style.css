@@ -1,0 +1,157 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #fff;
+    --bcolor: rgba(20,20,20,1);
+    --handwriting:'Pacifico', cursive;
+    --sans-serif: 'Open Sans', sans-serif;
+    --background: linear-gradient(to top left, #313866,60%,#504099);
+
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    background: var(--background);
+    min-height: 100vh;
+    display:flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:4rem;
+    color: var(--color);
+    font-family:var(--sans-serif);
+
+}
+
+.cleanCard{
+    height: 50rem;
+    width:40rem;
+    background: var(--bcolor);
+    border-radius: 0.5rem;
+    animation-name: popup;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: backwards;
+}
+
+.cleanCard:nth-of-type(1){
+    animation-delay: 0.1s;
+}
+.cleanCard:nth-of-type(2){
+    animation-delay: 0.2s;
+}
+
+.cleanCard:nth-of-type(3){
+    animation-delay: 0.3s;
+}
+
+.cleanCard:nth-of-type(4){
+    animation-delay: 0.4s;
+}
+
+.cleanCard__header{
+    height:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--handwriting);
+}
+
+.cleanCard__heading{
+    font-weight: 400;
+    font-size:300%;
+}
+
+.cleanCard__activities{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:70%;
+    gap:2rem;
+    padding:2rem;
+}
+
+.cleanCard__activity{
+    list-style: none;
+    border: 0.2rem solid  var(--color);
+    border-left:none;
+    border-right:none;
+    width:100%;
+    padding:1rem;
+    font-weight:400;
+}
+
+.cleanCard__activity:hover{
+    cursor:pointer;
+}
+
+.cleanCard__activity--done{
+    text-decoration:line-through;
+}
+
+.cleanCard__footer{
+    height:10%; 
+    display:flex;
+    border-top: 0.2rem solid  var(--color);
+    padding-left:2rem;
+
+}
+
+.cleanCard__input{
+    height:100%;
+    width:70%;
+    border:none;
+    background: var(--bcolor);
+    color:var(--color);
+    font-size:100%;
+}
+
+.cleanCard__input:focus{
+    outline:none;
+}
+
+.cleanCard__button{
+    height:100%;
+    width:30%;
+    border-radius:0;
+    border:none;
+    font-size:100%;
+    background:  var(--color);
+    font-family: var(--sans-serif);
+    color: var
+}
+
+.cleanCard__button:hover{
+    cursor:pointer;
+}
+
+@keyframes popup {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark){
+    :root{
+        --color: rgba(20,20,20,1);
+        --bcolor: #eee;
+        --background: linear-gradient(#279EFF,60%,#40F8FF);
+        --handwriting: 'Caveat', cursive;
+    }
+
+    .cleanCard{
+        box-shadow: 0 0.2rem 1rem 0 rgba(0,0,0,0.2);
+    }
+}
